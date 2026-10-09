@@ -1,0 +1,20 @@
+class,dup_in_train
+BruteForce,0.0
+C&C,0.0
+Dictionary,0.07587548638132295
+Discovering_resources,0.0
+Exfiltration,0.0
+Fake_notification,0.0
+False_data_injection,0.0
+Generic_scanning,0.0008950770760815514
+MQTT_cloud_broker_subscription,0.19128586609989373
+MitM,0.0
+Modbus_register_reading,0.0
+Normal,0.018687042464079352
+RDOS,0.001061871725895512
+Reverse_shell,0.0
+Scanning_vulnerability,0.0006622516556291391
+TCP Relay,0.0
+crypto-ransomware,0.0
+fuzzing,0.22053231939163498
+insider_malcious,0.25365434221840066

@@ -1,0 +1,2 @@
+dataset,leakage_detected,informative_high_mcc_features,max_single_feature_MCC,MacroF1_A,MacroF1_D,gap,gate
+x_iiotid,True,Scr_ip_bytes;Scr_bytes;Std_kbmemused;Std_ideal_time;Std_user_time;std_num_cswch/s;Std_nice_time;Std_system_time;total_bytes;Avg_kbmemused;Avg_ideal_time;Avg_num_cswch/s,0.9927470772415156,0.9974464639216747,0.9428238271769898,0.05462263674468493,CASE B -- leakage present; model must be re-tested on the clean variant

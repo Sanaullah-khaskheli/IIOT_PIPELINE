@@ -1,0 +1,20 @@
+class,n_rows_used,is_normal,dataset,run_id
+BruteForce,17266,False,x_iiotid,SAFE_FINAL_01
+C&C,1046,False,x_iiotid,SAFE_FINAL_01
+Dictionary,940,False,x_iiotid,SAFE_FINAL_01
+Discovering_resources,8460,False,x_iiotid,SAFE_FINAL_01
+Exfiltration,8090,False,x_iiotid,SAFE_FINAL_01
+Fake_notification,10,False,x_iiotid,SAFE_FINAL_01
+False_data_injection,1862,False,x_iiotid,SAFE_FINAL_01
+Generic_scanning,18375,False,x_iiotid,SAFE_FINAL_01
+MQTT_cloud_broker_subscription,8598,False,x_iiotid,SAFE_FINAL_01
+MitM,43,False,x_iiotid,SAFE_FINAL_01
+Modbus_register_reading,2176,False,x_iiotid,SAFE_FINAL_01
+Normal,154020,True,x_iiotid,SAFE_FINAL_01
+RDOS,51628,False,x_iiotid,SAFE_FINAL_01
+Reverse_shell,371,False,x_iiotid,SAFE_FINAL_01
+Scanning_vulnerability,19316,False,x_iiotid,SAFE_FINAL_01
+TCP Relay,775,False,x_iiotid,SAFE_FINAL_01
+crypto-ransomware,167,False,x_iiotid,SAFE_FINAL_01
+fuzzing,480,False,x_iiotid,SAFE_FINAL_01
+insider_malcious,6377,False,x_iiotid,SAFE_FINAL_01

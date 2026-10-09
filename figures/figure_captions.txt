@@ -1,0 +1,15 @@
+Fig. 2: Closed-set Macro-F1 along the shortcut-audit ladder. Rungs are cumulative; a rung identical to its predecessor is not plotted (gap). Error bars: sd over seeds.
+
+Fig. 3: Closed-set Macro-F1 of the classifiers on identical cleaned features (cleanest available rung per dataset). MLP-EDL is a control. Error bars: sd over seeds.
+
+Fig. 4: Unseen-family detection AUROC for each held-out attack family, split by the frozen taxonomy into near (a sibling family remains in the known pool) and far (no sibling). Dashed line: chance.
+
+Fig. S1-edge_iiotset: Per-family AUROC of every score on Edge-IIoTset (attacks-only known pool). Families sorted by mean AUROC.
+
+Fig. S1-x_iiotid: Per-family AUROC of every score on X-IIoTID (attacks-only known pool). Families sorted by mean AUROC.
+
+Fig. S1-ciciot2023: Per-family AUROC of every score on CICIoT2023 (attacks-only known pool). Families sorted by mean AUROC.
+
+Fig. 5: Unseen-family detection AUROC (mean over held-out families) for each score. Bars: 95% interval over seeds (not over families). EDL vacuity is a control.
+
+Fig. 7: Held-out families that are hardest to detect (rank fusion, attacks-only known pool). Blue: near; orange: far. Dashed line: chance.

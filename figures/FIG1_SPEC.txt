@@ -1,0 +1,4 @@
+FIG 1 -- MANUAL VECTOR FIGURE REQUIRED (draw in Inkscape/draw.io, export PDF, 7.0 in wide, sans-serif 7-8 pt):
+ Left->right 4 boxes: (1) 'Raw dataset' (Edge-IIoTset / X-IIoTID / CICIoT2023) -> (2) 'Shortcut audit ladder' [Raw -> Strict-clean -> No-port -> Network-only; sub-text: identifiers, timestamps, payload, ports, host telemetry]
+ -> (3) 'Frozen family taxonomy' [near = sibling in known pool, far = no sibling] -> (4) 'Sibling-aware LOAO' [train on known families, hold out one family]
+ -> output box 'Scores: RF max-prob | MLP max-prob/energy/Mahalanobis | rank fusion | EDL (control)' -> 'AUROC, AUPR, FPR@95TPR, DetRate@val | near vs far'. Colours: Okabe-Ito; no gradients.

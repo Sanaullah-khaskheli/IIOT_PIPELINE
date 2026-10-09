@@ -1,0 +1,9 @@
+figure,file,purpose,source_file,output_filename,width_in,dpi,generated
+Fig. 2,fig02_shortcut_audit,shortcut-audit ladder,tables/T_ladder_closed_set.csv,fig02_shortcut_audit.pdf/.png,7.0,600,2026-10-09T05:12:12
+Fig. 3,fig03_closed_set,closed-set comparison on identical cleaned features,tables/T_ladder_closed_set.csv,fig03_closed_set.pdf/.png,3.4,600,2026-10-09T05:12:12
+Fig. 4,fig04_near_far_sibling,near vs far family detection,statistics/loao_per_family.csv,fig04_near_far_sibling.pdf/.png,7.0,600,2026-10-09T05:12:13
+Fig. S1-edge_iiotset,figS1_family_heatmap_edge_iiotset,per-family AUROC heatmap (supplement),statistics/loao_per_family.csv,figS1_family_heatmap_edge_iiotset.pdf/.png,4.8999999999999995,600,2026-10-09T05:12:14
+Fig. S1-x_iiotid,figS1_family_heatmap_x_iiotid,per-family AUROC heatmap (supplement),statistics/loao_per_family.csv,figS1_family_heatmap_x_iiotid.pdf/.png,4.8999999999999995,600,2026-10-09T05:12:15
+Fig. S1-ciciot2023,figS1_family_heatmap_ciciot2023,per-family AUROC heatmap (supplement),statistics/loao_per_family.csv,figS1_family_heatmap_ciciot2023.pdf/.png,4.8999999999999995,600,2026-10-09T05:12:17
+Fig. 5,fig05_ood_scores,OOD score comparison,tables/T_loao_method_summary.csv,fig05_ood_scores.pdf/.png,7.0,600,2026-10-09T05:12:18
+Fig. 7,fig07_failure_cases,five lowest-AUROC held-out families per dataset,tables/T_loao_failure_cases.csv,fig07_failure_cases.pdf/.png,7.0,600,2026-10-09T05:12:18

@@ -13,11 +13,9 @@ Upload the `iiot_pipeline/` folder as a Kaggle Dataset (or paste files into /kag
    paste it into `config_final.yaml -> final.taxonomy_sha256`. After that LOAO refuses to run if the file changes. Do this BEFORE seeing any LOAO result.
 2. **One Kaggle version per dataset** (same `--run-id` in all three so provenance matches):
    `!python run_final.py --stage audit,ladder,loao --datasets edge_iiotset --run-id SAFE_FINAL_01`
-   (repeat for `x_iiotid`, `ciciot2023`). Use *Save Version -> Save & Run All (Commit)*, accelerator GPU T4, *Always save output*. LOAO is resumable:
-   if a session times out, re-run the same command and finished (family, seed) pairs are skipped (PARTIAL csv files).
-3. **Merge + report:** put the three `results_final/` folders into one notebook (copy `closed_set/`, `loao/`, `cleaned_features/`, `splits/`, `predictions/`, `leak_audit/`, `dataset_audit/`),
+   (repeat for `x_iiotid`, `ciciot2023`). 
    then `!python run_final.py --stage stats,figures,check --run-id SAFE_FINAL_01` -> tables, figures (PDF+PNG), `numbers.tex`, `consistency_report.csv`.
-4. The tables and figures of the article are generated from the result files by `07_stats_tables.py` and `08_make_figures.py`.
+3. The tables and figures of the article are generated from the result files by `07_stats_tables.py` and `08_make_figures.py`.
 If `consistency_report.csv` shows any FAIL the program prints `TRACEABILITY FAILURE -- DO NOT REPORT`.
 
 ## Output tree (`results_final/`)
@@ -28,7 +26,7 @@ proximity.csv, known_class_closed_set_F1.csv, split_hashes.csv), predictions/ (c
 statistics/ (loao_per_family.csv + every T_*.csv), tables/ (CSV+MD+TEX, numbers.tex, numbers_manifest.csv), figures/ (PDF, PNG, manifest, captions, audit), logs/.
 `open_set/` is intentionally unused: all open-set results are in `loao/` (single source of truth).
 
-## Experiment -> file -> manuscript mapping
+## Experiment -> file
 | Experiment | Output CSV | Table | Figure |
 |---|---|---|---|
 | Dataset overview, taxonomy, near/far counts | tables/T_dataset_overview.csv, taxonomy.csv | Table 1 | - |
@@ -54,12 +52,6 @@ threshold fixed on known VALIDATION rows (95th percentile); KnownFPR@val5 is the
 across-seed intervals are t-intervals over seeds. Statistics unit = family (Wilcoxon needs >=6 families with non-zero differences; Holm across the declared pairs).
 Rank fusion = 0.5*ECDF_val(RF 1-maxprob) + 0.5*ECDF_val(MLP Mahalanobis); ECDFs fitted on known validation rows only; weights fixed because validation contains no unknowns. `fusion_z` (log-z-score) is a pre-declared sensitivity row.
 
-## Deliberate decisions
-* TabICLv2 is NOT coded: no peer-reviewed journal source (arXiv/ICML only) -> remove RQ4/Fig 6/Table 6.
-* EDL is a control only (`edl:vacuity`, `mlp_edl_both`). Hyper-parameters inherited from Stage 2, never tuned on test data.
-* Ladder rung A uses raw-spelling encoding; if a rung equals its predecessor (e.g. CICIoT2023 has no identifier/port columns) it is skipped and logged.
-* Sampling: CICIoT2023 is class-capped (priors not natural); Edge/X-IIoTID use `model_rows` stratified subsets. State both in the paper.
-* Tested here on synthetic data with a torch-free stub for the networks; the PyTorch path reuses the Stage 2/4 functions unchanged.
 
-## Note on confusion matrices
-`results/closed_set/<dataset>/confusion_matrices.zip` contains the per-rung, per-model, per-seed confusion matrices (`cm_<rung>_<model>_seed<seed>.csv`).
+
+).

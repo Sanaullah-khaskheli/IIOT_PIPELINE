@@ -1,9 +1,0 @@
-feature,type,cardinality,cardinality_ratio,top_token_share,missing_tokens,inf_tokens,constant,identifier_like,timestamp_like,target_derived_name,protocol_prefix
-flow_duration,numeric,737163,0.701941672689461,0.2959186879925955,0,0,False,True,False,False,
-Rate,numeric,981793,0.9348833577577875,0.012923535746831248,0,0,False,True,False,False,
-Srate,numeric,981793,0.9348833577577875,0.012923535746831248,0,0,False,True,False,False,
-SMTP,numeric,1,9.522204352218721e-07,1.0,0,0,True,False,False,False,
-AVG,numeric,543966,0.5179755412659008,0.20495592647715574,0,0,False,True,False,False,
-Std,numeric,527381,0.5021829653477461,0.35145218377473514,0,0,False,True,False,False,
-IAT,numeric,1013764,0.965326797292266,0.00034660823842076147,0,0,False,True,False,False,
-Magnitue,numeric,539165,0.5134039309564007,0.20707842582726532,0,0,False,True,False,False,

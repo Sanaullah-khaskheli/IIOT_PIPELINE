@@ -1,0 +1,19 @@
+family,n_rows,evaluated,group,dataset,run_id
+BruteForce,17266,True,CredentialAttack,x_iiotid,SAFE_FINAL_01
+C&C,1046,True,Malware_C2,x_iiotid,SAFE_FINAL_01
+Dictionary,940,True,CredentialAttack,x_iiotid,SAFE_FINAL_01
+Discovering_resources,8460,True,Reconnaissance,x_iiotid,SAFE_FINAL_01
+Exfiltration,8090,True,Exfiltration,x_iiotid,SAFE_FINAL_01
+False_data_injection,1862,True,False_data_injection,x_iiotid,SAFE_FINAL_01
+Generic_scanning,18375,True,Reconnaissance,x_iiotid,SAFE_FINAL_01
+MQTT_cloud_broker_subscription,8598,True,MQTT_cloud_broker_subscription,x_iiotid,SAFE_FINAL_01
+Modbus_register_reading,2176,True,Modbus_register_reading,x_iiotid,SAFE_FINAL_01
+RDOS,51628,True,DoS,x_iiotid,SAFE_FINAL_01
+Reverse_shell,371,True,Malware_C2,x_iiotid,SAFE_FINAL_01
+Scanning_vulnerability,19316,True,Reconnaissance,x_iiotid,SAFE_FINAL_01
+TCP Relay,775,True,Malware_C2,x_iiotid,SAFE_FINAL_01
+fuzzing,480,True,fuzzing,x_iiotid,SAFE_FINAL_01
+insider_malcious,6377,True,insider_malcious,x_iiotid,SAFE_FINAL_01
+Fake_notification,10,False,Fake_notification,x_iiotid,SAFE_FINAL_01
+MitM,43,False,MITM_Spoofing,x_iiotid,SAFE_FINAL_01
+crypto-ransomware,167,False,Ransomware,x_iiotid,SAFE_FINAL_01

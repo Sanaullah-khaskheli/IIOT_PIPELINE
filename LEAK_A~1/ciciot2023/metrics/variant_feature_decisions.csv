@@ -1,0 +1,47 @@
+feature,in_variant_D_removed,suspected_artifact,strong_single_feature(canonical),identifier_or_time,strict_pattern,constant
+flow_duration,False,False,False,False,False,False
+Header_Length,False,False,False,False,False,False
+Protocol Type,False,False,False,False,False,False
+Duration,False,False,False,False,False,False
+Rate,False,False,False,False,False,False
+Srate,False,False,False,False,False,False
+Drate,False,False,False,False,False,False
+fin_flag_number,False,False,False,False,False,False
+syn_flag_number,False,False,False,False,False,False
+rst_flag_number,False,False,False,False,False,False
+psh_flag_number,False,False,False,False,False,False
+ack_flag_number,False,False,False,False,False,False
+ece_flag_number,False,False,False,False,False,False
+cwr_flag_number,False,False,False,False,False,False
+ack_count,False,False,False,False,False,False
+syn_count,False,False,False,False,False,False
+fin_count,False,False,False,False,False,False
+urg_count,False,False,False,False,False,False
+rst_count,False,False,False,False,False,False
+HTTP,False,False,False,False,False,False
+HTTPS,False,False,False,False,False,False
+DNS,False,False,False,False,False,False
+Telnet,False,False,False,False,False,False
+SMTP,True,False,False,False,False,True
+SSH,False,False,False,False,False,False
+IRC,False,False,False,False,False,False
+TCP,False,False,False,False,False,False
+UDP,False,False,False,False,False,False
+DHCP,False,False,False,False,False,False
+ARP,False,False,False,False,False,False
+ICMP,False,False,False,False,False,False
+IPv,False,False,False,False,False,False
+LLC,False,False,False,False,False,False
+Tot sum,False,False,False,False,False,False
+Min,False,False,False,False,False,False
+Max,False,False,False,False,False,False
+AVG,False,False,False,False,False,False
+Std,False,False,False,False,False,False
+Tot size,False,False,False,False,False,False
+IAT,False,False,False,False,False,False
+Number,False,False,False,False,False,False
+Magnitue,False,False,False,False,False,False
+Radius,False,False,False,False,False,False
+Covariance,False,False,False,False,False,False
+Variance,False,False,False,False,False,False
+Weight,False,False,False,False,False,False

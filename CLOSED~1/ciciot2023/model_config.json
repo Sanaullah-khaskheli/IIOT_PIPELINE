@@ -1,0 +1,41 @@
+{
+ "models": [
+  "rf",
+  "lgbm",
+  "mlp_softmax_en",
+  "mlp_edl_both"
+ ],
+ "stage2": {
+  "models": [
+   "hgb",
+   "lgbm",
+   "rf",
+   "logreg",
+   "mlp_softmax_bal",
+   "mlp_softmax_en",
+   "mlp_edl_none",
+   "mlp_edl_ce",
+   "mlp_edl_kl",
+   "mlp_edl_both"
+  ],
+  "epochs": 20,
+  "patience": 5,
+  "batch_size": 2048,
+  "lr": 0.001,
+  "en_beta": 0.9999,
+  "edl_kl_coef": 0.1,
+  "edl_anneal_epochs": 10,
+  "bootstrap": 300
+ },
+ "hgb_max_iter": 60,
+ "seeds": [
+  42,
+  7,
+  13,
+  21,
+  99
+ ],
+ "run_id": "SAFE_FINAL_01",
+ "rf": "100 trees, balanced_subsample",
+ "lgbm": "sqrt-balanced weights, lr .05, early stop 20"
+}

@@ -60,3 +60,6 @@ Rank fusion = 0.5*ECDF_val(RF 1-maxprob) + 0.5*ECDF_val(MLP Mahalanobis); ECDFs 
 * Ladder rung A uses raw-spelling encoding; if a rung equals its predecessor (e.g. CICIoT2023 has no identifier/port columns) it is skipped and logged.
 * Sampling: CICIoT2023 is class-capped (priors not natural); Edge/X-IIoTID use `model_rows` stratified subsets. State both in the paper.
 * Tested here on synthetic data with a torch-free stub for the networks; the PyTorch path reuses the Stage 2/4 functions unchanged.
+
+## Note on confusion matrices
+`results/closed_set/<dataset>/confusion_matrices.zip` contains the per-rung, per-model, per-seed confusion matrices (`cm_<rung>_<model>_seed<seed>.csv`).

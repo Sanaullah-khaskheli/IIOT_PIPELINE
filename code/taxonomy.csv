@@ -1,0 +1,66 @@
+dataset,family,group,rule
+edge_iiotset,Backdoor,Malware_C2,backdoor|reverse_?shell|malware|c&c|c2|trojan|relay
+edge_iiotset,DDoS_HTTP,DDoS,ddos
+edge_iiotset,DDoS_ICMP,DDoS,ddos
+edge_iiotset,DDoS_TCP,DDoS,ddos
+edge_iiotset,DDoS_UDP,DDoS,ddos
+edge_iiotset,Fingerprinting,Reconnaissance,recon|scan|fingerprint|discover
+edge_iiotset,MITM,MITM_Spoofing,mitm|arp|spoof
+edge_iiotset,Password,CredentialAttack,brute|dictionary|password|login
+edge_iiotset,Port_Scanning,Reconnaissance,recon|scan|fingerprint|discover
+edge_iiotset,Ransomware,Ransomware,ransom|crypto
+edge_iiotset,SQL_injection,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser
+edge_iiotset,Uploading,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser
+edge_iiotset,Vulnerability_scanner,Reconnaissance,recon|scan|fingerprint|discover
+edge_iiotset,XSS,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser
+x_iiotid,BruteForce,CredentialAttack,brute|dictionary|password|login
+x_iiotid,C&C,Malware_C2,backdoor|reverse_?shell|malware|c&c|c2|trojan|relay
+x_iiotid,Dictionary,CredentialAttack,brute|dictionary|password|login
+x_iiotid,Discovering_resources,Reconnaissance,recon|scan|fingerprint|discover
+x_iiotid,Exfiltration,Exfiltration,singleton(no rule)
+x_iiotid,Fake_notification,Fake_notification,singleton(no rule)
+x_iiotid,False_data_injection,False_data_injection,"manual override (tampering, not web injection)"
+x_iiotid,Generic_scanning,Reconnaissance,recon|scan|fingerprint|discover
+x_iiotid,MQTT_cloud_broker_subscription,MQTT_cloud_broker_subscription,singleton(no rule)
+x_iiotid,MitM,MITM_Spoofing,mitm|arp|spoof
+x_iiotid,Modbus_register_reading,Modbus_register_reading,singleton(no rule)
+x_iiotid,RDOS,DoS,(^|[_\-\s])r?dos($|[_\-\s])|^dos
+x_iiotid,Reverse_shell,Malware_C2,backdoor|reverse_?shell|malware|c&c|c2|trojan|relay
+x_iiotid,Scanning_vulnerability,Reconnaissance,recon|scan|fingerprint|discover
+x_iiotid,TCP Relay,Malware_C2,backdoor|reverse_?shell|malware|c&c|c2|trojan|relay
+x_iiotid,crypto-ransomware,Ransomware,ransom|crypto
+x_iiotid,fuzzing,fuzzing,singleton(no rule)
+x_iiotid,insider_malcious,insider_malcious,singleton(no rule)
+ciciot2023,Backdoor_Malware,Malware_C2,backdoor|reverse_?shell|malware|c&c|c2|trojan|relay
+ciciot2023,BrowserHijacking,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser
+ciciot2023,CommandInjection,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser
+ciciot2023,DDoS-ACK_Fragmentation,DDoS,ddos
+ciciot2023,DDoS-HTTP_Flood,DDoS,ddos
+ciciot2023,DDoS-ICMP_Flood,DDoS,ddos
+ciciot2023,DDoS-ICMP_Fragmentation,DDoS,ddos
+ciciot2023,DDoS-PSHACK_Flood,DDoS,ddos
+ciciot2023,DDoS-RSTFINFlood,DDoS,ddos
+ciciot2023,DDoS-SYN_Flood,DDoS,ddos
+ciciot2023,DDoS-SlowLoris,DDoS,ddos
+ciciot2023,DDoS-SynonymousIP_Flood,DDoS,ddos
+ciciot2023,DDoS-TCP_Flood,DDoS,ddos
+ciciot2023,DDoS-UDP_Flood,DDoS,ddos
+ciciot2023,DDoS-UDP_Fragmentation,DDoS,ddos
+ciciot2023,DNS_Spoofing,MITM_Spoofing,mitm|arp|spoof
+ciciot2023,DictionaryBruteForce,CredentialAttack,brute|dictionary|password|login
+ciciot2023,DoS-HTTP_Flood,DoS,(^|[_\-\s])r?dos($|[_\-\s])|^dos
+ciciot2023,DoS-SYN_Flood,DoS,(^|[_\-\s])r?dos($|[_\-\s])|^dos
+ciciot2023,DoS-TCP_Flood,DoS,(^|[_\-\s])r?dos($|[_\-\s])|^dos
+ciciot2023,DoS-UDP_Flood,DoS,(^|[_\-\s])r?dos($|[_\-\s])|^dos
+ciciot2023,MITM-ArpSpoofing,MITM_Spoofing,mitm|arp|spoof
+ciciot2023,Mirai-greeth_flood,Mirai,mirai
+ciciot2023,Mirai-greip_flood,Mirai,mirai
+ciciot2023,Mirai-udpplain,Mirai,mirai
+ciciot2023,Recon-HostDiscovery,Reconnaissance,recon|scan|fingerprint|discover
+ciciot2023,Recon-OSScan,Reconnaissance,recon|scan|fingerprint|discover
+ciciot2023,Recon-PingSweep,Reconnaissance,recon|scan|fingerprint|discover
+ciciot2023,Recon-PortScan,Reconnaissance,recon|scan|fingerprint|discover
+ciciot2023,SqlInjection,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser
+ciciot2023,Uploading_Attack,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser
+ciciot2023,VulnerabilityScan,Reconnaissance,recon|scan|fingerprint|discover
+ciciot2023,XSS,WebApplication,sql|xss|command_?injection|upload|inject|deface|browser

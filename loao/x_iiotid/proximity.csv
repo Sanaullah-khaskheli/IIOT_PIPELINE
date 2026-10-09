@@ -1,0 +1,46 @@
+dataset,family,seed,proximity_dist,nearest_known,run_id
+x_iiotid,BruteForce,42,0.8062064870865655,Dictionary,SAFE_FINAL_01
+x_iiotid,BruteForce,7,0.817841578118003,Dictionary,SAFE_FINAL_01
+x_iiotid,BruteForce,13,0.8071311349442879,Dictionary,SAFE_FINAL_01
+x_iiotid,C&C,42,0.7419590614250196,MitM,SAFE_FINAL_01
+x_iiotid,C&C,7,0.7564942302575359,MitM,SAFE_FINAL_01
+x_iiotid,C&C,13,0.734127130724221,MitM,SAFE_FINAL_01
+x_iiotid,Dictionary,42,0.6565794036276815,Fake_notification,SAFE_FINAL_01
+x_iiotid,Dictionary,7,0.6310452750608427,Fake_notification,SAFE_FINAL_01
+x_iiotid,Dictionary,13,0.6640934063309534,Fake_notification,SAFE_FINAL_01
+x_iiotid,Discovering_resources,42,0.5821248787284673,Normal,SAFE_FINAL_01
+x_iiotid,Discovering_resources,7,0.5810719401100168,Normal,SAFE_FINAL_01
+x_iiotid,Discovering_resources,13,0.5801292599672565,Normal,SAFE_FINAL_01
+x_iiotid,Exfiltration,42,0.651630298465432,insider_malcious,SAFE_FINAL_01
+x_iiotid,Exfiltration,7,0.651644338870576,insider_malcious,SAFE_FINAL_01
+x_iiotid,Exfiltration,13,0.6524706121249362,insider_malcious,SAFE_FINAL_01
+x_iiotid,False_data_injection,42,0.44992661818840696,TCP Relay,SAFE_FINAL_01
+x_iiotid,False_data_injection,7,0.4519452705554423,TCP Relay,SAFE_FINAL_01
+x_iiotid,False_data_injection,13,0.4394834933165523,TCP Relay,SAFE_FINAL_01
+x_iiotid,Generic_scanning,42,0.4588625101564147,MQTT_cloud_broker_subscription,SAFE_FINAL_01
+x_iiotid,Generic_scanning,7,0.4590858718957653,MQTT_cloud_broker_subscription,SAFE_FINAL_01
+x_iiotid,Generic_scanning,13,0.4672302245528576,MQTT_cloud_broker_subscription,SAFE_FINAL_01
+x_iiotid,MQTT_cloud_broker_subscription,42,0.4212958461484723,Scanning_vulnerability,SAFE_FINAL_01
+x_iiotid,MQTT_cloud_broker_subscription,7,0.4252226171047913,Scanning_vulnerability,SAFE_FINAL_01
+x_iiotid,MQTT_cloud_broker_subscription,13,0.42287185868405436,Scanning_vulnerability,SAFE_FINAL_01
+x_iiotid,Modbus_register_reading,42,0.6824468771074994,fuzzing,SAFE_FINAL_01
+x_iiotid,Modbus_register_reading,7,0.6867866929236445,fuzzing,SAFE_FINAL_01
+x_iiotid,Modbus_register_reading,13,0.6798594047974219,fuzzing,SAFE_FINAL_01
+x_iiotid,RDOS,42,0.9242038872643041,Discovering_resources,SAFE_FINAL_01
+x_iiotid,RDOS,7,0.9261749582583513,Discovering_resources,SAFE_FINAL_01
+x_iiotid,RDOS,13,0.9247208127687255,Discovering_resources,SAFE_FINAL_01
+x_iiotid,Reverse_shell,42,0.699445311136613,TCP Relay,SAFE_FINAL_01
+x_iiotid,Reverse_shell,7,0.6979114657001401,TCP Relay,SAFE_FINAL_01
+x_iiotid,Reverse_shell,13,0.6969491473436489,TCP Relay,SAFE_FINAL_01
+x_iiotid,Scanning_vulnerability,42,0.4750301284471511,MQTT_cloud_broker_subscription,SAFE_FINAL_01
+x_iiotid,Scanning_vulnerability,7,0.47418963125293917,MQTT_cloud_broker_subscription,SAFE_FINAL_01
+x_iiotid,Scanning_vulnerability,13,0.47461685416894017,MQTT_cloud_broker_subscription,SAFE_FINAL_01
+x_iiotid,TCP Relay,42,0.4430546198928987,False_data_injection,SAFE_FINAL_01
+x_iiotid,TCP Relay,7,0.44473171416878254,False_data_injection,SAFE_FINAL_01
+x_iiotid,TCP Relay,13,0.4432598575798574,False_data_injection,SAFE_FINAL_01
+x_iiotid,fuzzing,42,0.6804936548637824,Modbus_register_reading,SAFE_FINAL_01
+x_iiotid,fuzzing,7,0.6804405674495613,Modbus_register_reading,SAFE_FINAL_01
+x_iiotid,fuzzing,13,0.664053808717753,Reverse_shell,SAFE_FINAL_01
+x_iiotid,insider_malcious,42,0.6461783540875821,Exfiltration,SAFE_FINAL_01
+x_iiotid,insider_malcious,7,0.647031377525599,Exfiltration,SAFE_FINAL_01
+x_iiotid,insider_malcious,13,0.5837241084045816,Fake_notification,SAFE_FINAL_01

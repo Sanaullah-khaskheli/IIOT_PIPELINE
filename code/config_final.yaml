@@ -1,0 +1,188 @@
+results_dir: results_final
+seeds:
+- 42
+- 7
+- 13
+- 21
+- 99
+EXPERIMENTS:
+  dataset_audit: true
+  leak_audit: true
+  leak_followup: false
+  baselines: false
+  open_set: false
+active_datasets:
+- edge_iiotset
+- x_iiotid
+- ciciot2023
+suspicion:
+  critical: 0.9
+  high: 0.7
+  moderate: 0.5
+strong_mcc_for_strict_drop: 0.9
+probe_rows: 400000
+variant_rows: 300000
+hgb_max_iter: 60
+model_rows: 300000
+stage2:
+  models:
+  - hgb
+  - lgbm
+  - rf
+  - logreg
+  - mlp_softmax_bal
+  - mlp_softmax_en
+  - mlp_edl_none
+  - mlp_edl_ce
+  - mlp_edl_kl
+  - mlp_edl_both
+  epochs: 20
+  patience: 5
+  batch_size: 2048
+  lr: 0.001
+  en_beta: 0.9999
+  edl_kl_coef: 0.1
+  edl_anneal_epochs: 10
+  bootstrap: 300
+test_size: 0.2
+stage4:
+  deep_models:
+  - softmax_en
+  - edl_both
+  min_family_rows: 200
+  max_unknown: 20000
+  max_families: null
+  seeds:
+  - 42
+  - 7
+  - 13
+  mc_dropout_passes: 0
+min_token_support: 50
+gate:
+  collapse_gap: 0.15
+  collapse_floor: 0.75
+datasets:
+  edge_iiotset:
+    search:
+    - /kaggle/input/**/DNN-EdgeIIoT-dataset.csv
+    - ./**/DNN-EdgeIIoT-dataset.csv
+    family_col_candidates:
+    - Attack_type
+    label_cols:
+    - Attack_label
+    - Attack_type
+    normal_tokens:
+    - normal
+    sample_frac: 1.0
+    artifact_columns:
+    - mqtt.topic
+    - mqtt.protoname
+    - mqtt.conack.flags
+    - dns.qry.name.len
+    time_col: frame.time
+    group_cols:
+    - ip.src_host
+    - ip.dst_host
+    strict_drop_patterns:
+    - ^ip\.
+    - ^arp\.
+    - ^frame\.time
+    - ^tcp\.srcport
+    - ^tcp\.payload
+    - ^tcp\.options
+    - ^http\.request\.full_uri
+    - ^http\.file_data
+    - ^mqtt\.msg$
+    - ^dns\.qry\.name$
+    - ^icmp\.transmit_timestamp
+    - ^tcp\.ack_raw
+    - ^tcp\.seq$
+  x_iiotid:
+    search:
+    - /kaggle/input/**/X-IIoTID dataset.csv
+    family_col_candidates:
+    - class1
+    - class2
+    - class3
+    family_pick: most_classes
+    label_cols:
+    - class1
+    - class2
+    - class3
+    - label
+    - Label
+    - Attack_type
+    normal_tokens:
+    - normal
+    - benign
+    sample_frac: 1.0
+    artifact_columns: []
+    time_col: Timestamp
+    group_cols:
+    - Scr_IP
+    - Des_IP
+    strict_drop_patterns:
+    - ^Date$
+    - ^Timestamp$
+    - ^Scr_IP$
+    - ^Des_IP$
+    - ^Scr_port$
+    telemetry_patterns:
+    - (?i)^(avg|std)_
+    - ^anomaly_alert$
+    - ^Succesful_login$
+    - ^File_activity$
+    - ^Process_activity$
+    - ^read_write_physical\.process$
+    - ^is_privileged$
+  ciciot2023:
+    search:
+    - /kaggle/input/**/CICIoT2023/part-*.csv
+    family_col_candidates:
+    - label
+    - Label
+    label_cols:
+    - label
+    - Label
+    normal_tokens:
+    - benigntraffic
+    - benign
+    - normal
+    sample_frac: 1.0
+    class_cap: 40000
+    variant_rows: 400000
+    model_rows: 500000
+    probe_rows: 400000
+    artifact_columns: []
+    time_col: ''
+    group_cols: []
+    strict_drop_patterns: []
+final:
+  taxonomy_file: taxonomy.csv
+  taxonomy_sha256: '41a38782952dd1d28ddcb5eac1bffae0c9cea98d9886e2304ab8af87e160b6c7'
+  ladder_models:
+  - rf
+  - lgbm
+  - mlp_softmax_en
+  - mlp_edl_both
+  ladder_seeds:
+  - 42
+  - 7
+  - 13
+  - 21
+  - 99
+  loao_seeds:
+  - 42
+  - 7
+  - 13
+  loao_methods_note: rf:maxprob, mlp:maxprob, mlp:energy, mlp:mahalanobis, fusion_rank(rf+maha),
+    fusion_z(rf+maha)=pre-declared sensitivity, edl:vacuity=control
+  fusion_weights: null
+  save_probs_seeds:
+  - 42
+  save_scores_seeds:
+  - 42
+  stored_known_scores_cap: 20000
+  min_sibling_rows: 20
+  bootstrap: 5000
+  ece_bins: 15

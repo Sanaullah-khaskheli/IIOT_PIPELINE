@@ -1,0 +1,15 @@
+family,n_rows,evaluated,group,dataset,run_id
+Backdoor,3361,True,Malware_C2,edge_iiotset,SAFE_FINAL_01
+DDoS_HTTP,6747,True,DDoS,edge_iiotset,SAFE_FINAL_01
+DDoS_ICMP,15740,True,DDoS,edge_iiotset,SAFE_FINAL_01
+DDoS_TCP,6768,True,DDoS,edge_iiotset,SAFE_FINAL_01
+DDoS_UDP,16434,True,DDoS,edge_iiotset,SAFE_FINAL_01
+Password,6780,True,CredentialAttack,edge_iiotset,SAFE_FINAL_01
+Port_Scanning,3050,True,Reconnaissance,edge_iiotset,SAFE_FINAL_01
+Ransomware,1477,True,Ransomware,edge_iiotset,SAFE_FINAL_01
+SQL_injection,6922,True,WebApplication,edge_iiotset,SAFE_FINAL_01
+Uploading,5088,True,WebApplication,edge_iiotset,SAFE_FINAL_01
+Vulnerability_scanner,6774,True,Reconnaissance,edge_iiotset,SAFE_FINAL_01
+XSS,2151,True,WebApplication,edge_iiotset,SAFE_FINAL_01
+Fingerprinting,135,False,Reconnaissance,edge_iiotset,SAFE_FINAL_01
+MITM,164,False,MITM_Spoofing,edge_iiotset,SAFE_FINAL_01

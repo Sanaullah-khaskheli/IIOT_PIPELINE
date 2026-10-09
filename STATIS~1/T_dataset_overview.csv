@@ -1,0 +1,4 @@
+dataset,rows_used,classes,attack_families,families_evaluated,families_skipped_small,near_families,far_families,features_per_rung
+ciciot2023,500000,34,33,33,0,31,2,A_raw:46; D_strict:45
+edge_iiotset,300000,15,14,12,2,9,3,A_raw:61; D_strict:36; E3_noport:34
+x_iiotid,300000,19,18,15,3,8,7,A_raw:65; D_strict:58; E3_noport:57; E4_network:27

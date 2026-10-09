@@ -1,0 +1,7 @@
+dataset,model,known_MacroF1
+ciciot2023,mlp_softmax_en,0.671533775201296
+ciciot2023,rf,0.8698080602018708
+edge_iiotset,mlp_softmax_en,0.8244932302189738
+edge_iiotset,rf,0.8457933505802944
+x_iiotid,mlp_softmax_en,0.7475959589226658
+x_iiotid,rf,0.8883222925525094

@@ -1,2 +1,0 @@
-dataset,leakage_detected,informative_high_mcc_features,max_single_feature_MCC,MacroF1_A,MacroF1_D,gap,gate
-ciciot2023,False,IAT,0.7065951691448668,0.8143414323141688,0.8143414323141688,0.0,CASE C -- no practically important leakage detected

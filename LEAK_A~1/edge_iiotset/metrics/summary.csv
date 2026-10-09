@@ -1,2 +1,0 @@
-dataset,leakage_detected,informative_high_mcc_features,max_single_feature_MCC,MacroF1_A,MacroF1_D,gap,gate
-edge_iiotset,True,,1.0,1.0,0.8926932845756763,0.10730671542432368,CASE B -- leakage present; model must be re-tested on the clean variant

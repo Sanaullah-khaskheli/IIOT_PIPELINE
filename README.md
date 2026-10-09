@@ -11,13 +11,13 @@ The code runs three experiments on Edge-IIoTset, X-IIoTID and CICIoT2023:
 ## Folders
 
 - `code/` the scripts, `config_final.yaml`, `taxonomy.csv` and `requirements.txt`
-- `results/` result files of the run `SAFE_FINAL_01` (CSV tables, per-family results, feature lists, audit files, figures, logs)
+- `cleaned_features/`, `closed_set/`, `dataset_audit/`, `figures/`, `leak_audit/`, `loao/`, `logs/`, `statistics/` and `tables/` result files of the run `SAFE_FINAL_01` (CSV tables, per-family results, feature lists, audit files, figures, logs)
 
 The datasets are not included. Download them from their original sources and put the files where `config_final.yaml` expects them (`datasets:` section, `search:` paths):
 
-- Edge-IIoTset: `DNN-EdgeIIoT-dataset.csv` [add link and version]
-- X-IIoTID: `X-IIoTID dataset.csv` [add link and version]
-- CICIoT2023: `CICIoT2023/part-*.csv` [add link and version]
+- Edge-IIoTset: `DNN-EdgeIIoT-dataset.csv` 
+- X-IIoTID: `X-IIoTID dataset.csv` 
+- CICIoT2023: `CICIoT2023/part-*.csv` 
 
 ## Setup
 
@@ -54,13 +54,13 @@ Run from inside `code/`. All settings (seeds, paths, models) are in `config_fina
 
 | Folder | Content |
 |---|---|
-| `results/cleaned_features/` | feature list and removed columns per rung |
-| `results/closed_set/` | per-seed closed-set results, per-class F1, class counts, confusion matrices (zipped) |
-| `results/loao/` | held-out-family results per family, seed and score, family inventory, split hashes |
-| `results/statistics/`, `results/tables/` | per-family table and the summary tables used in the paper |
-| `results/dataset_audit/`, `results/leak_audit/` | dataset audit and single-feature screen outputs |
-| `results/figures/` | figures (PDF, PNG), manifest and data audit |
-| `results/logs/` | run logs |
+| `cleaned_features/` | feature list and removed columns per rung |
+| `closed_set/` | per-seed closed-set results, per-class F1, class counts, confusion matrices (zipped) |
+| `loao/` | held-out-family results per family, seed and score, family inventory, split hashes |
+| `statistics/`, `tables/` | per-family table and the summary tables used in the paper |
+| `dataset_audit/`, `leak_audit/` | dataset audit and single-feature screen outputs |
+| `figures/` | figures (PDF, PNG), manifest and data audit |
+| `logs/` | run logs |
 
 ## Scores and metrics
 

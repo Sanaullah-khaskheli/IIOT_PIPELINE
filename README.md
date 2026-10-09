@@ -76,6 +76,3 @@ All scores are oriented so that larger means more unknown: RF max-probability, M
 
 This code is released under the MIT License (see the LICENSE file). The datasets are not included and remain under their own licences; see the links above.
 
-%%## Citation
-
-%[add paper citation and archived DOI after publication]
